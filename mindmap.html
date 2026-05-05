@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C. Nyalchand & Sons — Website Roadmap</title>
+  <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@0.16"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 28px;
+      background: #1a1a1a;
+      border-bottom: 1px solid #2a2a2a;
+      flex-shrink: 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-icon {
+      width: 36px; height: 36px;
+      background: linear-gradient(135deg, #c5a059, #d9bc80);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+    }
+
+    .logo-text { font-size: 1rem; font-weight: 600; color: #f0ead8; }
+    .logo-sub  { font-size: 0.72rem; color: #888; margin-top: 1px; }
+
+    .legend {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .legend-item {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 0.75rem; color: #aaa;
+    }
+
+    .legend-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+    }
+
+    #mindmap-wrap {
+      flex: 1;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .markmap {
+      width: 100%;
+      height: 100%;
+    }
+
+    footer {
+      padding: 8px 28px;
+      background: #1a1a1a;
+      border-top: 1px solid #2a2a2a;
+      font-size: 0.7rem;
+      color: #555;
+      text-align: center;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <div class="logo-icon">🏪</div>
+      <div>
+        <div class="logo-text">C. Nyalchand &amp; Sons</div>
+        <div class="logo-sub">Website Roadmap — Future Changes</div>
+      </div>
+    </div>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#ef4444"></div> High Priority</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#f59e0b"></div> Medium Priority</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#10b981"></div> Low Priority</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#3b82f6"></div> Completed</div>
+    </div>
+  </header>
+
+  <div id="mindmap-wrap">
+    <div class="markmap">
+      <script type="text/template">
+---
+markmap:
+  colorFreezeLevel: 2
+  initialExpandLevel: 3
+  zoom: true
+  pan: true
+---
+
+# 🏪 C. Nyalchand & Sons
+
+## 🔴 High Priority
+
+### 📸 Real Product Photos
+#### Photograph all products
+#### Resize to 800 × 1000 px
+#### Compress under 200 KB each
+#### Replace AI-generated placeholders
+#### Shoot real store hero & interior
+
+### 📧 Enquiry Form — EmailJS
+#### Create free account at emailjs.com
+#### Connect sales@cnyalchand.com
+#### Send name · phone · product · message
+#### Add honeypot spam protection
+#### Replace fake setTimeout in scripts.js
+
+### 💬 WhatsApp Integration
+#### Floating green button on every page
+#### Pre-filled product enquiry message
+#### WhatsApp button inside Enquiry Modal
+#### WhatsApp link on Contact page
+#### Use wa.me deep-link format
+
+### 🌐 Domain & Public Hosting
+#### Buy cnyalchand.com or cnyalchandandsons.com
+#### Host free on Netlify — drag & drop
+#### Or use GitHub Pages
+#### Connect custom domain
+#### Enable free HTTPS / SSL certificate
+
+## 🟡 Medium Priority
+
+### 🛒 Wishlist / Enquiry Cart
+#### Heart icon on every product card
+#### Wishlist badge counter in nav
+#### Wishlist side drawer UI
+#### Bulk enquiry via WhatsApp
+#### Persist in localStorage
+
+### 🗂️ More Category Pages
+#### shawls.html — Shawls & Scarves
+#### lungi.html — Lungi & Cambric
+#### towels.html — Towels & Chadar
+#### poplin.html — Poplin fabric
+#### Update Products page grid
+#### Add cards to Home page
+#### New hero slider slide
+
+### 🔍 Product Search
+#### Search bar in navigation
+#### Real-time card filtering on type
+#### Search results page across all categories
+#### Highlight matching keyword
+
+### 📱 Mobile UX
+#### Test on real Android & iOS devices
+#### Larger slider arrows for touch
+#### Better Enquiry Modal on small screens
+#### Back to Top button on product pages
+#### All tap targets minimum 44 × 44 px
+
+### 📊 SEO & Analytics
+#### Open Graph tags for WhatsApp previews
+#### Create sitemap.xml
+#### Create robots.txt
+#### Register on Google Search Console
+#### Add Google Analytics GA4
+#### Track enquiry submissions as conversions
+
+## 🟢 Low Priority
+
+### 🗺️ Store Info & Maps
+#### Add full street address
+#### Add opening hours
+#### Get Directions button
+#### Register on Google My Business
+#### Fix map pin to exact store location
+
+### 🎨 Design Enhancements
+#### Seasonal banners — Diwali · Eid · Wedding
+#### New Arrivals section on home page
+#### Fabric tags on cards — Pure Silk · Cotton
+#### Customer testimonials section
+#### Featured Product of the Week spotlight
+
+### 🔧 Code Quality
+#### Delete unused kurta.png
+#### Move inline styles to CSS classes
+#### Add JSDoc to all functions
+#### Set up .gitignore before GitHub push
+#### Split scripts.js into modules
+
+## ✅ Already Completed
+
+### Layout & Navigation
+#### Responsive hamburger mobile menu
+#### Sticky nav with scroll shadow
+#### Active page highlight in nav
+
+### Visual & Animations
+#### Dark mode toggle — localStorage
+#### Dynamic 3-slide hero banner
+#### Auto-advance · Arrows · Dots · Swipe
+#### Scroll reveal on all sections
+#### 3D card tilt hover effect
+#### Category icon pulse on hover
+
+### Pages & Features
+#### 4 dedicated category pages
+#### Enquiry modal on all product pages
+#### Contact form with validation & success
+#### Google Maps embed
+#### Stats strip on homepage
+#### 10 AI-generated product images
+      </script>
+    </div>
+  </div>
+
+  <footer>
+    Scroll to pan &nbsp;·&nbsp; Pinch or scroll wheel to zoom &nbsp;·&nbsp; Click nodes to collapse/expand &nbsp;·&nbsp; Last updated: May 2026
+  </footer>
+
+</body>
+</html>

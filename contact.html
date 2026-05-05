@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact C.Nyalchand &amp; Sons | Mumbai Store Details</title>
+  <meta name="description" content="Contact C. Nyalchand & Sons in Mumbai. Find our store address, phone, email, and send us a message.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+    <p>Get in touch with C.Nyalchand &amp; Sons</p>
+  </header>
+
+  <nav>
+    <ul id="nav-links">
+      <li><a href="C&SONS.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-controls">
+      <div class="dark-toggle-wrap">
+        <span class="dark-toggle-label">Dark</span>
+        <label class="toggle-switch" title="Toggle dark mode">
+          <input type="checkbox" id="dark-mode-toggle" aria-label="Toggle dark mode">
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+      <button id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <div class="content-grid">
+
+      <!-- Left: info + form -->
+      <div class="reveal from-left">
+        <div class="contact-info">
+          <h2 class="section-title" style="text-align:left;">Reach Out To Us</h2>
+
+          <p>
+            <strong>📧 Email:</strong>
+            <a href="mailto:sales@cnyalchand.com">sales@cnyalchand.com</a>
+          </p>
+          <p>
+            <strong>📞 Phone:</strong>
+            <a href="tel:+912222424546">(022) 22424546</a>
+          </p>
+          <p>
+            <strong>📍 Address:</strong>
+          </p>
+          <address>
+            C Nyalchand &amp; Sons<br>
+            Mumbai, Maharashtra<br>
+            India
+          </address>
+          <p><em>Feel free to drop by or contact us via email/phone for any queries.</em></p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="form-section">
+          <h3>Send Us a Message</h3>
+          <form id="contact-form" novalidate>
+            <div class="input-wrap">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" placeholder="e.g. Rahul Sharma" required>
+            </div>
+            <div class="input-wrap">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" placeholder="you@example.com" required>
+            </div>
+            <div class="input-wrap">
+              <label for="contact-message">Your Message</label>
+              <textarea id="contact-message" rows="5" placeholder="How can we help you?" required></textarea>
+            </div>
+            <button type="submit" class="btn" id="contact-submit">Send Message</button>
+          </form>
+
+          <div id="form-success">
+            <div class="success-icon">✅</div>
+            <h3>Message Received!</h3>
+            <p>Thank you for reaching out. We'll get back to you soon.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Map -->
+      <div class="map-container reveal from-right">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3758.7545756374197!2d72.8247991751069!3d18.95374355579942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce18014b10a7%3A0xcfb2142551c3de27!2sC%20Nyalchand!5e1!3m2!1sen!2sin!4v1772125792710!5m2!1sen!2sin"
+          allowfullscreen loading="lazy"
+          title="Location of C Nyalchand store on Google Maps"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 C.Nyalchand and Sons. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>

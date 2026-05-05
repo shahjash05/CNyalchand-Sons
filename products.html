@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - C.Nyalchand &amp; Sons</title>
+  <meta name="description" content="Browse all product categories at C. Nyalchand & Sons — Kurtas, Sherwanis, Bedsheets, Dhotis and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>C. Nyalchand &amp; Sons</h1>
+    <p>Premium Product Categories</p>
+  </header>
+
+  <nav>
+    <ul id="nav-links">
+      <li><a href="C&SONS.html">Home</a></li>
+      <li><a href="products.html" class="active">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-controls">
+      <div class="dark-toggle-wrap">
+        <span class="dark-toggle-label">Dark</span>
+        <label class="toggle-switch" title="Toggle dark mode">
+          <input type="checkbox" id="dark-mode-toggle" aria-label="Toggle dark mode">
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+      <button id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <h2 class="section-title reveal">Shop by Category</h2>
+
+    <div class="category-list">
+
+      <a href="kurtas.html" class="category-card reveal">
+        <span class="cat-icon">🧣</span>
+        <h3>Kurtas</h3>
+        <p>Premium collection of traditional and modern Kurtas — shaded, silk, cotton and festive styles.</p>
+        <div class="btn btn-outline" style="margin-top:0.5rem;">Shop Now</div>
+      </a>
+
+      <a href="sherwanis.html" class="category-card reveal">
+        <span class="cat-icon">👘</span>
+        <h3>Sherwanis</h3>
+        <p>Elegant Sherwanis for weddings and special occasions — gold, navy, embroidered and more.</p>
+        <div class="btn btn-outline" style="margin-top:0.5rem;">Shop Now</div>
+      </a>
+
+      <a href="bedsheets.html" class="category-card reveal">
+        <span class="cat-icon">🛏️</span>
+        <h3>Bedsheets &amp; Handlooms</h3>
+        <p>Premium home textiles — traditional handloom weaves, floral and geometric patterns.</p>
+        <div class="btn btn-outline" style="margin-top:0.5rem;">Shop Now</div>
+      </a>
+
+      <a href="dhotis.html" class="category-card reveal">
+        <span class="cat-icon">🪡</span>
+        <h3>Dhotis &amp; Uparna</h3>
+        <p>Authentic traditional wear — pure cotton and silk dhotis with rich gold borders.</p>
+        <div class="btn btn-outline" style="margin-top:0.5rem;">Shop Now</div>
+      </a>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 C.Nyalchand and Sons. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>

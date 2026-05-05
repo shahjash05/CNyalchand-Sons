@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurtas Collection - C.Nyalchand &amp; Sons</title>
+  <meta name="description" content="Browse our full kurta collection — shaded, embroidered silk, cotton daily wear and festive blend kurtas at C. Nyalchand & Sons.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Kurtas Collection</h1>
+    <p>Explore our wide variety of premium kurtas</p>
+  </header>
+
+  <nav>
+    <ul id="nav-links">
+      <li><a href="C&SONS.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-controls">
+      <div class="dark-toggle-wrap">
+        <span class="dark-toggle-label">Dark</span>
+        <label class="toggle-switch" title="Toggle dark mode">
+          <input type="checkbox" id="dark-mode-toggle" aria-label="Toggle dark mode">
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+      <button id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <div class="product-grid">
+
+      <article class="product-card reveal">
+        <div class="img-wrap">
+          <img src="kurta_shaded.png" alt="Shaded Kurta">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Shaded Kurta</h3>
+          <p class="product-price">Contact for Price</p>
+          <button class="btn btn-enquiry" data-product="Shaded Kurta">Add to Enquiry</button>
+        </div>
+      </article>
+
+      <article class="product-card reveal">
+        <div class="img-wrap">
+          <img src="kurta_silk.png" alt="Embroidered Silk Kurta">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Embroidered Silk Kurta</h3>
+          <p class="product-price">Contact for Price</p>
+          <button class="btn btn-enquiry" data-product="Embroidered Silk Kurta">Add to Enquiry</button>
+        </div>
+      </article>
+
+      <article class="product-card reveal">
+        <div class="img-wrap">
+          <img src="kurta_cotton.png" alt="Cotton Daily Wear Kurta">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Cotton Daily Wear Kurta</h3>
+          <p class="product-price">Contact for Price</p>
+          <button class="btn btn-enquiry" data-product="Cotton Daily Wear Kurta">Add to Enquiry</button>
+        </div>
+      </article>
+
+      <article class="product-card reveal">
+        <div class="img-wrap">
+          <img src="kurta_festive.png" alt="Festive Blend Kurta">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Festive Blend Kurta</h3>
+          <p class="product-price">Contact for Price</p>
+          <button class="btn btn-enquiry" data-product="Festive Blend Kurta">Add to Enquiry</button>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Enquiry Modal -->
+  <div id="enquiry-modal" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+    <div class="modal-box">
+      <button id="modal-close" aria-label="Close enquiry modal">&times;</button>
+      <h3 id="modal-heading">Send Enquiry</h3>
+      <p class="modal-subtitle">Enquiring about: <strong id="modal-product-title"></strong></p>
+
+      <form id="enquiry-form">
+        <div class="input-wrap">
+          <label for="enq-name">Your Name</label>
+          <input type="text" id="enq-name" placeholder="e.g. Rahul Sharma" required>
+        </div>
+        <div class="input-wrap">
+          <label for="enq-phone">Phone Number</label>
+          <input type="tel" id="enq-phone" placeholder="+91 98765 43210" required>
+        </div>
+        <div class="input-wrap">
+          <label for="enq-msg">Message (optional)</label>
+          <textarea id="enq-msg" rows="3" placeholder="Any specific requirements?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold" style="width:100%;">Send Enquiry</button>
+      </form>
+
+      <div id="enquiry-success">
+        <div class="success-icon">✅</div>
+        <h3>Enquiry Sent!</h3>
+        <p>We'll get back to you shortly.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 C.Nyalchand and Sons. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>
